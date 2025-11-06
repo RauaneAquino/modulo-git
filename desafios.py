@@ -1,17 +1,17 @@
-"""
-Desafio Módulo Git
+# """
+# Desafio Módulo Git
 
-Neste arquivo você encontrará funções **incompletas** que representam
-tarefas relacionadas ao aprendizado de Git e GitHub.
+# Neste arquivo você encontrará funções **incompletas** que representam
+# tarefas relacionadas ao aprendizado de Git e GitHub.
 
-Seu objetivo é:
-- Criar uma issue para cada função.
-- Implementar a função em uma branch específica.
-- Fazer commit, criar tag e abrir Pull Request.
-- Repetir o processo até concluir todas as funções.
+# Seu objetivo é:
+# - Criar uma issue para cada função.
+# - Implementar a função em uma branch específica.
+# - Fazer commit, criar tag e abrir Pull Request.
+# - Repetir o processo até concluir todas as funções.
 
-Boa sorte e bons commits! 🚀
-"""
+# Boa sorte e bons commits! 🚀
+# """
 
 def mostrar_mensagem_inicial():
     """
@@ -21,7 +21,7 @@ def mostrar_mensagem_inicial():
     mensagem = "Bem-vindo ao Desafio de Git"
     return mensagem
 print (f"{mostrar_mensagem_inicial()}")
-
+print('----'*10)
 
 def listar_comandos_git_basicos():
     """
@@ -32,36 +32,37 @@ def listar_comandos_git_basicos():
     return "\nLista de Comandos básicos do Git\n- git init\n- git add\n- git commit\n- git status\n- git push"
 print(f"{listar_comandos_git_basicos()}")
 
+print('----'*10)
 
 def criar_mensagem_commit(funcao_nome):
-    """
-    Recebe o nome de uma função e retorna uma mensagem de commit padronizada.
-    Exemplo:
-    criar_mensagem_commit("listar_comandos_git_basicos") ->
-    "Implementa função listar_comandos_git_basicos"
-    """
-    pass
+    funcao_nome = {listar_comandos_git_basicos()}
+    return f"Escolha o comando básico Git {funcao_nome}"
+print (f"{criar_mensagem_commit ({listar_comandos_git_basicos()})}")
+
+#     mensagem = f"Implementa função {funcao_nome}"
+#     resultado = criar_mensagem_commit(listar_comandos_git_basicos)
+# print(resultado)
 
 
-def verificar_tag_valida(tag):
-    """
-    Verifica se uma tag está no formato 'vX.Y' (ex: v1.0, v2.1).
-    Retorna True se o formato for válido, caso contrário False.
-    """
-    pass
+
+# def verificar_tag_valida(tag):
+#     """
+#     Verifica se uma tag está no formato 'vX.Y' (ex: v1.0, v2.1).
+#     Retorna True se o formato for válido, caso contrário False.
+#     """
+#     pass
 
 
-def gerar_relatorio_final(funcoes_concluidas):
-    """
-    Recebe uma lista com os nomes das funções implementadas
-    e retorna uma mensagem final do desafio.
+# def gerar_relatorio_final(funcoes_concluidas):
+#     """
+#     Recebe uma lista com os nomes das funções implementadas
+#     e retorna uma mensagem final do desafio.
 
-    Exemplo:
-    gerar_relatorio_final(["mostrar_mensagem_inicial", "listar_comandos_git_basicos"])
-    ->
-    "Desafio concluído! 2 funções implementadas com sucesso."
-    """
-    pass
+#     Exemplo:
+#     gerar_relatorio_final(["mostrar_mensagem_inicial", "listar_comandos_git_basicos"])
+#     ->
+#     "Desafio concluído! 2 funções implementadas com sucesso."
+#     """
+#     pass
 
-mostrar_mensagem_inicial()
-listar_comandos_git_basicos()
+
