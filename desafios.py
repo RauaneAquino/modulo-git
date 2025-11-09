@@ -71,6 +71,14 @@ def verificar_tag_valida(tag):
 #     ->
 #     "Desafio concluído! 2 funções implementadas com sucesso."
 #     """
-#     pass
+def gerar_relatorio_final(funcoes_concluidas):
+    qtd = len(funcoes_concluidas)
+    mensagem = f"Desafio concluído! {qtd} função{'s' if qtd != 1 else ''} implementada{'s' if qtd != 1 else ''} com sucesso."
+
+    print(f"Funções concluídas: {funcoes_concluidas}")
+    print(mensagem)
+
+    return mensagem
+
 
 
