@@ -50,7 +50,15 @@ print (f"{criar_mensagem_commit ({listar_comandos_git_basicos()})}")
 #     Verifica se uma tag está no formato 'vX.Y' (ex: v1.0, v2.1).
 #     Retorna True se o formato for válido, caso contrário False.
 #     """
-#     pass
+import re
+
+def verificar_tag_valida(tag):
+    if not isinstance(tag, str):
+        return False
+    t = tag.strip().lower()
+    return bool(re.fullmatch(r"v[0-9]+\.[0-9]+", t))
+
+
 
 
 # def gerar_relatorio_final(funcoes_concluidas):
